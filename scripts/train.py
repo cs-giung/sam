@@ -193,6 +193,9 @@ if __name__ == '__main__':
     elif cfg.DATASETS.NAME in ['CIFAR100',]:
         image_shape = (1, 32, 32, 3,)
         num_classes = 100
+    elif cfg.DATASETS.NAME in ['TinyImageNet200',]:
+        image_shape = (1, 64, 64, 3,)
+        num_classes = 200
     else:
         raise NotImplementedError
 
